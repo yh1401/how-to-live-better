@@ -147,6 +147,7 @@ let currentFilter = 'all';
 let currentSearch = '';
 
 function ratioClass(r) { return 'ratio-' + r; }
+function esc(s) { const d = document.createElement('div'); d.textContent = s||''; return d.innerHTML; }
 
 function renderSpeed() {
   const entries = DATA.entries.filter(e => {
